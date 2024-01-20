@@ -17,16 +17,17 @@ class _DetaySayfaState extends State<DetaySayfa> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.yemek.yemek_adi),
+        backgroundColor: Colors.orange,
       ),
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Image.asset("resimler/${widget.yemek.yemek_resim_adi}"),
             Text(
               "${widget.yemek.yemek_adi}",
               style: TextStyle(fontSize: 20, color: Colors.blue),
             ),
-            SizedBox(height: 50,),
             SizedBox(
               height: 50,
               width: 200,

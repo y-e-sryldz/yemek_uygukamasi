@@ -54,6 +54,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Yemekler"),
+        backgroundColor: Colors.orange,
       ),
       body: FutureBuilder<List<Yemekler>>(
         future: yemekleriGetir(),
